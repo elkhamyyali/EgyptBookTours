@@ -17,12 +17,12 @@ interface MyPageProps {
 const MyPage: React.FC<MyPageProps> = ({ DetailTour }) => {
   return (
     <div>
-      {/* <ImageGallery
+      <ImageGallery
         title={DetailTour.title}
         breadcrumb={["Home", "Destinations", "Luxury Beach Resort"]}
         mainContent={DetailTour.description}
         images={DetailTour.images}
-      /> */}
+      />
       <TripInfo DetailTour={DetailTour} />
       <Included DetailTour={DetailTour} />
       <TourItinerary DetailTour={DetailTour} />

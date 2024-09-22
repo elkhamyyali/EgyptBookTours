@@ -27,10 +27,10 @@ const TravelPackagePage: React.FC<TravelPackagePageProps> = ({ toursData }) => {
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 lg:mt-0 mt-3">
         {currentTours.map((pkg) => (
           <Link href={`/top-packages/${pkg.id}`} key={pkg.id}>
-            <div className="w-full bg-white rounded-lg overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl cursor-pointer">
+            <div className="w-full bg-white rounded-[35px] overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl cursor-pointer">
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-2/6 h-64 md:h-auto relative">
                   <Image
@@ -40,13 +40,13 @@ const TravelPackagePage: React.FC<TravelPackagePageProps> = ({ toursData }) => {
                     height={100}
                     className="transition-transform duration-300 hover:scale-105 w-full h-full"
                   />
-                  <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 text-sm font-segoe rounded-sm shadow-md">
+                  <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 text-sm font-segoe rounded-[30px] shadow-md">
                     Special Offer 20%
                   </div>
-                  <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors duration-200 group">
+                  <button className="absolute top-3 right-3 bg-white p-2 rounded-[30px] shadow-md hover:bg-gray-100 transition-colors duration-200 group">
                     <Heart className="w-5 h-5 text-gray-600 group-hover:text-red-500" />
                   </button>
-                  {/* <button className="absolute bottom-3 left-3 bg-white text-gray-700 px-4 py-2 text-sm font-segoe rounded-sm shadow-md hover:bg-gray-100 transition-colors duration-200 flex items-center space-x-1">
+                  {/* <button className="absolute bottom-3 left-3 bg-white text-gray-700 px-4 py-2 text-sm font-segoe rounded-[30px] shadow-md hover:bg-gray-100 transition-colors duration-200 flex items-center space-x-1">
                     <MapPin className="w-4 h-4" />
                     <span>View on map</span>
                   </button> */}
@@ -104,11 +104,11 @@ const TravelPackagePage: React.FC<TravelPackagePageProps> = ({ toursData }) => {
                       <p className="text-sm text-gray-600">Per Person</p>
                     </div>
                     <div className="flex sm:flex-row sm:space-y-0 sm:space-x-2">
-                      <Button className="bg-black capitalize mr-3 md:mr-0 text-white font-segoe sm:py-2 px-3 sm:px-6 rounded-sm transition duration-300 ease-in-out transform hover:bg-gray-700 hover:scale-105 w-full sm:w-auto">
+                      <Button className="bg-black capitalize mr-3 md:mr-0 text-white font-segoe sm:py-2 px-3 sm:px-6 rounded-[30px] transition duration-300 ease-in-out transform hover:bg-gray-700 hover:scale-105 w-full sm:w-auto">
                         View tour
                       </Button>
 
-                      <Button className="border bg-green-300 md:mx-0 mx-1 px-2 md:px-2 text-nowrap border-green-600 text-green-900 hover:bg-green-50 font-segoe sm:py-2 sm:px-6 rounded-sm transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto">
+                      <Button className="border bg-green-300 md:mx-0 mx-1 px-2 md:px-2 text-nowrap border-green-600 text-green-900 hover:bg-green-50 font-segoe sm:py-2 sm:px-6 rounded-[30px] transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto">
                         Whats App{" "}
                         <FaWhatsapp className="text-green-900 ml-3" size={20} />
                       </Button>

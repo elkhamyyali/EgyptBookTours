@@ -65,7 +65,7 @@ export const Header = ({ header, className }: HeaderProps_TP) => {
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           {/* Logo */}
           <Link href="/" className="p-6">
-            <div className="text-nowrap">Egypt Raisen Tours</div>
+            <div className="text-nowrap">Egypt Book Tours</div>
           </Link>
 
           {/* Desktop Navigation Links (Hidden on Mobile) */}
