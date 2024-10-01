@@ -19,18 +19,22 @@ const MyPage: React.FC<MyPageProps> = ({ DetailTour }) => {
     <div>
       <ImageGallery
         title={DetailTour.title}
-        breadcrumb={["Home", "Destinations", "Luxury Beach Resort"]}
+        breadcrumb={["Home", "Tours", DetailTour.title]}
         mainContent={DetailTour.description}
         images={DetailTour.images}
       />
-      <TripInfo DetailTour={DetailTour} />
-      <Included DetailTour={DetailTour} />
-      <TourItinerary DetailTour={DetailTour} />
-      <PricePlans DetailTour={{ tour_prices: DetailTour.tour_prices }} />
-      <UserProfilePage />
-      <FAQ DetailTour={DetailTour} />
-      <Reviews />
-      <RandomButtons DetailTour={{ tags: DetailTour.tags }} />
+      <div className="p-4 lg:p-0">
+        <TripInfo DetailTour={DetailTour} />
+      </div>
+      <div className="p-4 lg:p-0">
+        <Included DetailTour={DetailTour} />
+        <TourItinerary DetailTour={DetailTour} />
+        <PricePlans DetailTour={{ tour_prices: DetailTour.tour_prices }} />
+        {/* <UserProfilePage /> */}
+        <FAQ DetailTour={DetailTour} />
+        {/* <Reviews /> */}
+        <RandomButtons DetailTour={{ tags: DetailTour.tags }} />
+      </div>
     </div>
   );
 };

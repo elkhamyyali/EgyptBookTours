@@ -27,17 +27,17 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
 }) => {
   return (
     <Link href={`/${id}`}>
-      <div className="flex transition-all ease-in-out flex-col rounded-[40px] bg-white cursor-pointer overflow-hidden bg-transparent md:max-w-xs max-w-sm sm:mx-2 mx-3 my-2 sm:my-4 lg:my-6">
-        <div className="relative h-60 w-full">
+      <div className="flex transition-all ease-in-out flex-col cursor-pointer overflow-hidden bg-transparent md:max-w-xs max-w-sm sm:mx-2 mx-3 my-2 sm:my-4 lg:my-6">
+        <div className="relative h-60 w-full ">
           <Image
             src={image || defaultImage}
             width={0}
             height={0}
             alt={title}
-            className="w-full h-full object-cover hover:shadow-xl"
+            className="w-full rounded-md h-full object-cover hover:shadow-xl"
           />
         </div>
-        <div className="flex-1 p-4 flex flex-col h-72">
+        <div className="flex-1 pt-3 flex flex-col h-72">
           <h3 className="font-semibold text-lg font-segoe text-black mb-1 truncate">
             {title}
           </h3>
@@ -63,14 +63,9 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
           <p className="text-gray-600 text-sm mb-2">Age Range: {ageRange}</p>
 
           <div className="mt-auto text-left">
-            <p className="text-[#049070] font-semibold text-lg font-segoe">
+            <p className="text-black font-semibold text-lg font-segoe">
               From ${price}
             </p>
-          </div>
-
-          {/* "Explore Now" Button centered under price */}
-          <div className="flex justify-center mt-4 bg-[#049070] rounded-2xl text-white px-12 py-2  hover:bg-green-600 transition-all">
-            Explore Now
           </div>
         </div>
       </div>

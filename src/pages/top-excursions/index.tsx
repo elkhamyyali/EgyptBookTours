@@ -16,17 +16,19 @@ const Home: React.FC<HomeProps> = ({ toursData }) => {
       <div className="mt-28">
         <SearchExcursions />
       </div>
-      <div>
+      <div className="lg:px-5">
         <Explore />
       </div>
       <div>
         <Drops />
       </div>
       <div>
-        <h2 className="md:text-3xl text-xl font-segoe ml-5 mb-6 text-start">
+        <h2 className="md:text-3xl text-xl font-segoe mx-5 my-6 text-start">
           Tours and Tickets to Experience Giza Pyramids
         </h2>
-        <Excursions toursData={toursData} />
+        <div className="lg:px-5 px-2">
+          <Excursions toursData={toursData} />
+        </div>
       </div>
     </div>
   );

@@ -66,8 +66,8 @@ const Blog: React.FC<Props> = ({ blogData }) => {
     : staticBlogData.data;
 
   return (
-    <div className="pb-5">
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-4 gap-6 justify-center mx-auto max-w-screen-xl">
+    <div className="p-0">
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-6 justify-center mx-auto max-w-screen-xl">
         {dataToShow.map((blog) => (
           <Card
             key={blog.id}

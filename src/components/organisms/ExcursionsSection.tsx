@@ -14,6 +14,7 @@ const ExcursionsSection: React.FC<ExcursionsSectionProps> = ({ toursData }) => {
       </div>
       <div>
         <Excursions toursData={toursData} />{" "}
+        {/* Pass toursData to Excursions */}
       </div>
     </div>
   );
